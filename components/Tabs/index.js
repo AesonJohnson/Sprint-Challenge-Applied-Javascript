@@ -10,6 +10,7 @@
 
 function tabCreator(topic){
     const newTab = document.createElement('div');
+
     newTab.classList.add('tab');
 
     newTab.textContent = topic;
@@ -17,15 +18,14 @@ function tabCreator(topic){
     return newTab;
 }
 
-topics = document.querySelector('.topics');
-topics.appendChild(tabCreator());
+const topics = document.querySelector('.topics');
 
 // AXIOS
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
     .then(response => {
         response.data.topics.forEach(topic => {
-            let tab = tabMaker(topic);
+            let tab = tabCreator(topic);
             topics.appendChild(tab);
         })
         // console.log(response);
