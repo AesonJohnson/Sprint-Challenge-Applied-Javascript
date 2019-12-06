@@ -22,4 +22,8 @@ function cardMaker(article){
     const card = document.createElement('div');
     const headline = document.createElement('div');
     const author = document.createElement('div');
+    const imgContainer = document.createElement('img');
+    const name = document.createElement('span');
+
+    
 }
