@@ -33,8 +33,18 @@ function cardMaker(article){
     card.appendChild(headline);
     card.appendChild(author);
     card.appendChild(name);
+    author.appendChild(imgContainer);
+    imgContainer.appendChild(img);
 
     return card;
 }
 
 const articles = document.querySelector('cards-container');
+
+axios.get('https://lambda-times-backend.herokuapp.com/articles')
+    .then( response => {
+        console.log(response);
+    })
+    .catch( error => {
+        console.log(error);
+    })
