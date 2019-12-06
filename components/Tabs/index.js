@@ -11,13 +11,14 @@
 function tabCreator(topic){
     const newTab = document.createElement('div');
     newTab.classList.add('tab');
+
     newTab.textContent = topic;
 
     return newTab;
 }
 
-const tabTopics = document.querySelectorAll('.topics');
-tabTopics.appendChild(tabCreator());
+topics = document.querySelector('.topics');
+topics.appendChild(tabCreator());
 
 // AXIOS
 
