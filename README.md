@@ -42,7 +42,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Why would we convert a NodeList into an Array?
 
-    In order to use array functions like .forEach() and .map().
+    In order to use array methods like .map().
 
 5. What is a component?
 
