@@ -30,13 +30,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+    DOM (Document Object Model) determines how a given document's parts are structured and manipulated. Any programming language can access the DOM.
+
 2. What is an event?
+
+    In Javascript, an event is any interaction from a user to the browser which the browser can detect and record.
 
 3. What is an event listener?
 
+    In Javascript, an event listener is an operation which triggers a programmed result from the browser in reaction to an event caused by a user.
+
 4. Why would we convert a NodeList into an Array?
 
+    In order to use array functions like .forEach() and .map().
+
 5. What is a component?
+
+    A component is a piece of code combining HTML, CSS, and Javascript that a programmer can use and reuse in an application.
 
 ### Git Set up
 

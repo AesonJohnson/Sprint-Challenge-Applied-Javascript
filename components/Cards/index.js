@@ -25,7 +25,7 @@ function cardMaker(article){
     const author = document.createElement('div');
     const imgContainer = document.createElement('div');
     const img = document.createElement('img');
-    const name = document.createElement('span');
+    const authorName = document.createElement('span');
 
     card.classList.add('card');
     headline.classList.add('headline');
@@ -33,13 +33,13 @@ function cardMaker(article){
     imgContainer.classList.add('img-container');
 
     headline.textContent = article.headline;
-    name.textContent = article.name;
+    authorName.textContent = article.authorName;
     img.src = article.authorPhoto;
 
     card.appendChild(headline);
     card.appendChild(author);
     author.appendChild(imgContainer);
-    author.appendChild(name);
+    author.appendChild(authorName);
     imgContainer.appendChild(img);
 
     return card;
