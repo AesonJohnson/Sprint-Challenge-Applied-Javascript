@@ -18,7 +18,7 @@
 //
 // Create a card for each of the articles and add the card to the DOM.
 
-function cardMaker(title, aImg, aName){
+function cardMaker(title, aName, aImg){
     
     const card = document.createElement('div');
     const headline = document.createElement('div');
@@ -40,7 +40,8 @@ function cardMaker(title, aImg, aName){
     card.appendChild(author);
     card.appendChild(name);
     author.appendChild(imgContainer);
-    imgContainer.appendChild(img);
+    imgContainer.appendChild(aImg);
+    author.appendChild(aName)
 
     return card;
 }
