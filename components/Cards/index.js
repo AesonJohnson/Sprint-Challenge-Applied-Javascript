@@ -25,5 +25,16 @@ function cardMaker(article){
     const imgContainer = document.createElement('img');
     const name = document.createElement('span');
 
-    
+    card.classList.add('card');
+    headline.classList.add('headline');
+    author.classList.add('author');
+    imgContainer.classList.add('img-container);
+
+    card.appendChild(headline);
+    card.appendChild(author);
+    card.appendChild(name);
+
+    return card;
 }
+
+const articles = document.querySelector('cards-container');
